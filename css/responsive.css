@@ -1,0 +1,116 @@
+/*
+Author:         Teemu Matvejeff
+Latest changes: 31.8.2014
+*/
+
+/*
+    Small screen view.
+*/
+@media screen and (max-width: 700px){
+
+    #wrapper {
+      min-width: 480px;
+    }
+
+    #font {
+      background: #0c304a;
+      margin: -30px 0px 0px;
+      width: 100%;
+    }
+
+    #agenda ul li {
+      position: relative;
+      left: 0%;
+    }
+
+    nav {
+      height: 13em;
+    }
+
+}
+
+/*
+    Large screen view.
+*/
+
+@media screen and (min-width: 701px) {
+    #wrapper {
+        min-width: 480px;
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+
+    #font {
+        display: inline-block;
+        float: right;
+        width: 35%;
+        height: 7.5em;
+        border-bottom: 5px solid #0c304a;
+    }
+
+    nav {
+        float: left;
+        width: 65%;
+        height: 7.5em;
+        border-bottom: 5px solid #0c304a;
+    }
+
+    nav li {
+        display: inline-block;
+
+    }
+
+    nav p {
+        float: right;
+    }
+
+}
+/*
+    Print-friendly settings.
+*/
+@media print {
+
+    nav,
+    #font,
+    #boxslider,
+    #googleMap {
+        display: none;
+    }
+
+    #wrapper,
+    #logo {
+        border: none;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    #wrapper span {
+        text-decoration: underline;
+    }
+
+    #agenda span {
+        text-decoration: none;
+    }
+
+    @page {
+       margin: 1cm;
+    }
+
+    h1, h2 {
+      page-break-after: avoid;
+    }
+
+    p {
+      orphans: 3;
+      widows: 3;
+      font-size: 11pt;
+    }
+
+    a {
+      visibility: hidden;
+    }
+
+}

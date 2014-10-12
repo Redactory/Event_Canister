@@ -1,0 +1,195 @@
+/*
+Author:         Teemu Matvejeff
+Latest changes: 31.8.2014
+
+**************************************************
+GENERAL
+***************************************************/
+
+body {
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+P {
+    font-family: "Open Sans", sans serif;
+	font-size: 1em;
+    margin: 20px 2%;
+}
+
+H1,
+H2 {
+    font-family: "Quattrocento", sans serif;
+	text-align: center;
+	font-size: 3em;
+}
+
+H2 {
+	font-size: 2em;
+}
+
+LI {
+    list-style-type: none;
+	padding: 5px;
+    font-family: font-family: "Open Sans", sans-serif;
+}
+
+/***************************************************
+Class- and ID-specific styles (not navigation).
+***************************************************/
+
+/*
+    Background and container-specific styles.
+*/
+#background {
+    background: -webkit-linear-gradient(top, #0c304a 0%,#85a71e 100%);
+    background: -moz-linear-gradient(top, #0c304a 0%,#85a71e 100%);
+    background: -o-linear-gradient(top, #0c304a 0%,#85a71e 100%);
+    background: -ms-linear-gradient(top, #0c304a 0%,#85a71e 100%);
+}
+
+#wrapper {
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #000000;
+  margin-bottom: 1%;
+}
+
+#wrapper span {
+  font-weight: bold;
+}
+
+#wrapper a:last-of-type {
+    display: inline-block;
+    color: blue;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-left: 50%;
+    left: 50%;
+}
+
+#wrapper,
+#agenda {
+    background: #fff;
+}
+
+#agenda span {
+  font-weight: normal;
+}
+
+/*
+    Font adjustment-related styles.
+*/
+#inc {
+  position: relative;
+  font-size: 2em;
+  left: 40%;
+  background: orange;
+  padding: 0 2%;
+  top: 20%;
+}
+
+#dec {
+  position: relative;
+  font-size: 2em;
+  left: 50%;
+  background: orange;
+  padding: 0 2%;
+  top: 20%;
+}
+
+/*
+    Misc.
+*/
+#logo {
+	display: inline-block;
+	position: relative;
+	left: 40%;
+	width: 30%;
+	height: 30%;
+	margin-left: -3em;
+    margin-top: 5%;
+	border: 1px solid #800080;
+}
+
+/*
+    Timetable specific styles.
+*/
+#timetable span {
+  font-size: 1em;
+  display: block;
+  margin-left: 20%;
+  margin-top: 0.5em;
+}
+
+#timetable span span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: red;
+  font-weight: bold;
+}
+
+/*
+    Interactive (Google)map stylings.
+*/
+#googleMap
+{
+    border: 1px solid black;
+	width: 50%;
+	height: 25em;
+	position: relative;
+	margin-left: 25%;
+}
+
+/*
+    Slider (boxslider) specific styles.
+*/
+#boxslider {
+    position: relative;
+    height: 30%;
+    width:  30%;
+    left: 35%;
+}
+
+#boxslider ul {
+    margin: 0;
+}
+
+#boxslider img {
+    width: 100%;
+    height: 100%;
+}
+
+/***************************************************
+NAVIGATION
+***************************************************/
+#font {
+	background: #2b79a1;
+}
+
+NAV {
+	background: #2b79a1;
+	text-align: left;
+    height: 7.5em
+}
+
+nav a {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navigation LI {
+	padding: 10px 15px;
+	font-size: 1.15em;
+    font-family: "Open Sans", sans-serif;
+}
+
+NAV A:hover,
+NAV A.selected {
+	color: #00FF00;
+}
+
